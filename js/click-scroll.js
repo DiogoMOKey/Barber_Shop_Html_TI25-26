@@ -12,6 +12,7 @@ $.each(sectionArray, function(index, value){
         if (docScroll1 >= offsetSection) {
             $('#sidebarMenu .nav-link').removeClass('active');
             $('#sidebarMenu .nav-link:link').addClass('inactive');
+            
             // Seleciona o link pelo href correspondente
             var selector = '#sidebarMenu .nav-link[href="#section_' + value + '"]';
             $(selector).addClass('active').removeClass('inactive');

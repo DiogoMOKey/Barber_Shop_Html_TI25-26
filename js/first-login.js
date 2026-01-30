@@ -1,9 +1,13 @@
 // FIRST LOGIN - COOKIE AND TERMS MODAL
 function setCookie(name, value, days) {
-  var d = new Date();
-  d.setTime(d.getTime() + (days * 24 * 60 * 60 * 1000));
-  var expires = "expires=" + d.toUTCString();
-  document.cookie = name + "=" + value + ";" + expires + ";path=/";
+  var cookieStr = name + "=" + value + ";path=/";
+  if (typeof days === 'number' && days > 0) {
+    var d = new Date();
+    d.setTime(d.getTime() + (days * 24 * 60 * 60 * 1000));
+    cookieStr += ";expires=" + d.toUTCString();
+  }
+  // If days is not provided, cookie will be a session cookie (expires when browser closes)
+  document.cookie = cookieStr;
 }
 
 function getCookie(name) {
@@ -24,8 +28,17 @@ document.addEventListener('DOMContentLoaded', function() {
   function showTerms() {
     var modalEl = document.getElementById('conditionsModal');
     if (!modalEl) return;
+    // Remove aria-hidden and inert before showing modal for accessibility
+    modalEl.removeAttribute('aria-hidden');
+    modalEl.removeAttribute('inert');
     var modal = new bootstrap.Modal(modalEl, { backdrop: 'static', keyboard: false });
     modal.show();
+    // When modal is hidden, set inert and aria-hidden
+    modalEl.addEventListener('hidden.bs.modal', function handler() {
+      modalEl.setAttribute('aria-hidden', 'true');
+      modalEl.setAttribute('inert', '');
+      modalEl.removeEventListener('hidden.bs.modal', handler);
+    });
   }
 
   // Ensure event listeners are only added once
