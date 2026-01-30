@@ -1,0 +1,919 @@
+<!doctype html>
+<html lang="pt">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Diogo Chaves - TI B - 25/26">
+        <meta name="author" content="Diogo Chaves">
+
+        <title>Game Of Barbers</title>
+
+        <!-- CSS FILES -->        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/6.7.0/css/flag-icons.min.css">
+
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/bootstrap-icons.css" rel="stylesheet">
+        <link href="../../css/barber-shop.css" rel="stylesheet">
+    </head>
+    
+    <body>
+
+        <div class="container-fluid">
+            <div class="row">
+                <button class="navbar-toggler d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Alternar navegação">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+
+                <nav id="sidebarMenu" class="col-md-4 col-lg-2 d-md-block sidebar collapse p-0">
+                    <div class="position-sticky sidebar-sticky d-flex flex-column justify-content-between align-items-center" style="height: 100vh;">
+
+                        <!-- Top section: language buttons + logo + menu -->
+                        <div class="d-flex flex-column align-items-center">
+                            
+                            <div class="my-4"></div>
+                            <!-- Language buttons -->
+                            <div class="d-flex gap-2 mb-3">
+                                <a href="../pt/index.html" class="btn btn-outline-dark active btn-sm d-flex align-items-center">
+                                    <span class="fi fi-pt me-2" style="width:24px; height:24px;"></span> 
+                                    Português
+                                </a>
+                                <a href="../en/index.html" class="btn btn-outline-dark btn-sm d-flex align-items-center">
+                                    <span class="fi fi-us me-2" style="width:24px; height:24px;"></span> 
+                                    Inglês
+                                </a>
+                            </div>
+
+                            <!-- Logo -->
+                            <div class="my-4"></div>
+                            <a class="navbar-brand" href="index.html">
+                                <img src="../../images/barber-logo.png" class="img-fluid w-100" alt="Barber logo">
+                            </a>
+                            <div class="my-2"></div>
+                            <ul class="nav flex-column">
+                                <li class="nav-item">
+                                    <a class="nav-link click-scroll" href="#section_1"></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link click-scroll" href="#section_2">Nossa História</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link click-scroll" href="#section_3">Serviços</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link click-scroll" href="#section_4">Marcação</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link click-scroll" href="#section_5">Preços</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link click-scroll" href="#section_6">Testemunhos</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link click-scroll" href="#section_9">FAQ</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link click-scroll" href="#section_10">Contactos</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Bottom buttons -->
+                        <div class="d-flex gap-2 mb-3">
+                            <button type="button" class="btn btn-outline-dark btn-sm" data-bs-toggle="modal" data-bs-target="#politicsModal">Politicas</button>
+                            <button type="button" class="btn btn-outline-dark btn-sm" data-bs-toggle="modal" data-bs-target="#conditionsModal">Condições</button>
+                        </div>
+                    </div>
+                </nav>
+
+
+                
+
+                <div class="col-md-8 ms-sm-auto col-lg-10 p-0">
+                    <section class="hero-section d-flex justify-content-center align-items-center" id="section_1">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-8 col-12">
+                                        <h1 class="text-white mb-lg-3 mb-4"><strong>Game Of Barbers</em></strong></h1>
+                                        <h2 class="text-white mb-lg-3 mb-4"><strong>Barbearia <em>Profissional</em></strong></h2>
+                                        <p class="text-black">Obtenha o corte de cabelo dignos de reis</p>
+                                        <br>
+                                        <a class="btn custom-btn custom-border-btn custom-btn-bg-white smoothscroll me-2 mb-2" href="#section_2">Sobre Nós</a>
+                                        <button type="button" class="btn custom-btn custom-border-btn custom-btn-bg-white me-2 mb-2" data-bs-toggle="modal" data-bs-target="#politicsModal">Politicas</button>
+                                        <button type="button" class="btn custom-btn custom-border-btn custom-btn-bg-white me-2 mb-2" data-bs-toggle="modal" data-bs-target="#conditionsModal">Condições</button>
+                                        <a class="btn custom-btn smoothscroll mb-2" href="#section_3">O Que Fazemos</a>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="custom-block d-lg-flex flex-column justify-content-center align-items-center">
+                                <img src="../../images/barber-chair.png" class="custom-block-image img-fluid" alt="">
+
+                                <h4><strong class="text-white">Apresse-se! Consiga um ótimo corte.</strong></h4>
+
+                                <a href="#booking-section" class="smoothscroll btn custom-btn custom-btn-italic mt-3">Reservar Lugar</a>
+                            </div>
+                    </section>
+
+                    <section class="about-section section-padding" id="section_2">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-1 d-none d-lg-block"></div>
+
+                                <div class="col-lg-12 col-12 mx-auto">
+                                    <h2 class="mb-4">Game Of Barbers</h2>
+
+                                    <div class="border-bottom pb-3 mb-5">
+                                        <p>
+                                            Game Of Barbers é a barbearia ideal para quem procura estilo, precisão e atitude. 
+                                            Com um layout moderno de página única, o nosso website permite uma navegação simples e intuitiva, facilitando o acesso a todos os serviços.
+                                            <br><br>
+                                            Inspirada no universo de Game of Thrones, Game Of Barbers combina tradição e modernidade, oferecendo cortes de cabelo e barba dignos de reis.
+                                            Aqui, cada cliente é tratado como um verdadeiro lord, com atenção ao detalhe e um serviço de excelência.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <h6 class="mb-5">Conheça os nossos Barbeiros</h6>
+
+                                <div class="col-lg-3 col-12 custom-block-bg-overlay-wrap mb-4 d-flex flex-column align-items-center mx-lg-3">
+                                    <img src="../../images/barber/jon-snow-hairdresser.png" class="custom-block-bg-overlay-image img-fluid" alt="" style="max-width:260px; width:100%; margin:auto;">
+                                    
+                                    <div class="team-info d-flex align-items-center flex-wrap">
+                                        <p class="mb-0">Jon</p>
+                                        <ul class="social-icon ms-auto">
+                                            <li class="social-icon-item">
+                                                <a href="#" class="social-icon-link bi-facebook"></a>
+                                            </li>
+                                            <li class="social-icon-item">
+                                                <a href="#" class="social-icon-link bi-instagram"></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 col-12 custom-block-bg-overlay-wrap mb-4 d-flex flex-column align-items-center mx-lg-3">
+                                    <img src="../../images/barber/tyrion-lannister-hairdresser.png" class="custom-block-bg-overlay-image img-fluid" alt="" style="max-width:260px; width:100%; margin:auto;">
+                                    
+                                    <div class="team-info d-flex align-items-center flex-wrap">
+                                        <p class="mb-0">Tyrion</p>
+                                        <ul class="social-icon ms-auto">
+                                            <li class="social-icon-item">
+                                                <a href="#" class="social-icon-link bi-facebook"></a>
+                                            </li>
+                                            <li class="social-icon-item">
+                                                <a href="#" class="social-icon-link bi-instagram"></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-lg-3 col-12 custom-block-bg-overlay-wrap mb-4 d-flex flex-column align-items-center mx-lg-3">
+                                                                    <div class="col-lg-1 d-none d-lg-block"></div>
+                                    <img src="../../images/barber/arya-stark-hairdresser.png" class="custom-block-bg-overlay-image img-fluid" alt="" style="max-width:260px; width:100%; margin:auto;">
+
+                                    <div class="team-info d-flex align-items-center flex-wrap">
+                                        <p class="mb-0">Arya</p>
+                                        <ul class="social-icon ms-auto">
+                                            <li class="social-icon-item">
+                                                <a href="#" class="social-icon-link bi-facebook"></a>
+                                            </li>
+                                            <li class="social-icon-item">
+                                                <a href="#" class="social-icon-link bi-instagram"></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </section>
+
+
+                    <section class="services-section section-padding" id="section_3">
+                        <div class="container">
+                            <div class="row">
+
+                                <div class="col-lg-12 col-12">
+                                    <h2 class="mb-5">Serviços</h2>
+                                </div>
+
+                                <div class="col-lg-4 col-12 mb-4">
+                                    <div class="services-thumb">
+                                        <img src="../../images/services/barber-cutting-hair.png" class="services-image img-fluid" alt="">
+
+                                        <div class="services-info d-flex align-items-end">
+                                            <h4 class="mb-0">Cabelo</h4>
+
+                                            <strong class="services-thumb-price">9.00€</strong>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4 col-12 mb-4">
+                                    <div class="services-thumb">
+                                        <img src="../../images/services/barber-cutting-fade.png" class="services-image img-fluid" alt="">
+
+                                        <div class="services-info d-flex align-items-end">
+                                            <h4 class="mb-0">Cabelo Fade</h4>
+
+                                            <strong class="services-thumb-price">13,00€</strong>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4 col-12 mb-4">
+                                    <div class="services-thumb">
+                                        <img src="../../images/services/hairdresser-painting-client.png" class="services-image img-fluid" alt="">
+
+                                        <div class="services-info d-flex align-items-end">
+                                                <h4 class="mb-0">Cabelo Colorido</h4>
+
+                                            <strong class="services-thumb-price">20,00€</strong>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4 col-12 mb-4 ">
+                                    <div class="services-thumb">
+                                        <img src="../../images/services/hairdresser-grooming-client.jpg" class="services-image img-fluid" alt="">
+
+                                        <div class="services-info d-flex align-items-end">
+                                            <h4 class="mb-0">Barba</h4>
+
+                                            <strong class="services-thumb-price">5.50€</strong>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4 col-12 mb-4 ">
+                                    <div class="services-thumb">
+                                        <img src="../../images/services/barber-cutting-fade-beard.png" class="services-image img-fluid" alt="">
+
+                                        <div class="services-info d-flex align-items-end">
+                                            <h4 class="mb-0">Barba Fade</h4>
+
+                                            <strong class="services-thumb-price">7.99€</strong>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4 col-12 mb-4">
+                                    <div class="services-thumb">
+                                        <img src="../../images/services/barber-painting-beard.png" class="services-image img-fluid" alt="">
+
+                                        <div class="services-info d-flex align-items-end">
+                                            <h4 class="mb-0">Barba Colorida</h4>
+
+                                            <strong class="services-thumb-price">15.00€</strong>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4 col-12 mb-4">
+                                    <div class="services-thumb">
+                                        <img src="../../images/services/barber-washing-hair-client.png" class="services-image img-fluid" alt="">
+
+                                        <div class="services-info d-flex align-items-end">
+                                            <h4 class="mb-0">Lavagem</h4>
+
+                                            <strong class="services-thumb-price">3.00€</strong>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4 col-12 mb-4 mb-lg-0">
+                                    <div class="services-thumb">
+                                        <img src="../../images/services/barber-cutting-hairbrow.png" class="services-image img-fluid" alt="">
+
+                                        <div class="services-info d-flex align-items-end">
+                                            <h4 class="mb-0">Sobrancelha</h4>
+
+                                            <strong class="services-thumb-price">4.50€</strong>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4 col-12">
+                                    <div class="services-thumb">
+                                        <img src="../../images/services/barber-cutting-boys-hair.jpg" class="services-image img-fluid" alt="">
+
+                                        <div class="services-info d-flex align-items-end">
+                                            <h4 class="mb-0">Crianças</h4>
+
+                                            <strong class="services-thumb-price">6.00€</strong>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="booking-section section-padding" id="section_4">
+                        <div class="container">
+                            <div class="row">
+
+                                <div class="col-lg-10 col-12 mx-auto">
+                                    <form action="#" method="post" class="custom-form booking-form" id="bb-booking-form" role="form">
+                                        <div class="text-center mb-5">
+                                            <h2 class="mb-1">Reservar Trono</h2>
+
+                                            <p>Preencha o formulário e entraremos em contacto</p>
+                                        </div>
+
+                                        <div class="booking-form-body">
+                                            <div class="row">
+
+                                                <div class="col-lg-6 col-12">
+                                                    <input type="text" name="bb-name" id="bb-name" class="form-control" placeholder="Nome completo" required>
+                                                </div>
+
+                                                <div class="col-lg-6 col-12">
+                                                    <input type="tel" class="form-control" name="bb-phone" placeholder="Telemóvel 920-000-000" required>
+                                                </div>
+                                            
+                                                <div class="col-lg-6 col-12">
+                                                    <input class="form-control" type="time" name="bb-time" value="18:30" />
+                                                </div>
+
+                                                <div class="col-lg-6 col-12">
+                                                    <select class="form-select form-control" name="bb-branch" id="bb-branch">
+                                                        <option selected="">Selecionar Território</option>
+                                                        <option value="King's Landing">King's Landing</option>
+                                                        <option value="The Reach">The Reach</option>
+                                                        <option value="The Vale">The Vale</option>
+                                                    </select>
+                                                </div>
+
+                                                <div class="col-lg-6 col-12">
+                                                    <input type="date" name="bb-date" id="bb-date" class="form-control" required>
+                                                </div>
+
+                                                <div class="col-lg-6 col-12">
+                                                    <input type="number" name="bb-number" id="bb-number" class="form-control" placeholder="Número de Pessoas" required>
+                                                </div>
+                                            </div>
+
+                                            <textarea name="bb-message" rows="3" class="form-control" id="bb-message" placeholder="Comentário (Opcional)"></textarea>
+
+                                            <div class="col-lg-4 col-md-10 col-8 mx-auto">
+                                                <button type="submit" class="form-control">Enviar</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="price-list-section section-padding" id="section_5">
+                        <div class="container">
+                            <div class="row">
+
+                                <div class="col-lg-8 col-12">
+                                    <div class="price-list-thumb-wrap">
+                                        <div class="mb-4">
+                                            <h2 class="mb-2">Lista de Preços</h2>
+
+                                            <strong>A partir de 6€ em cortes de cabelo</strong>
+                                        </div>
+
+                                        <div class="price-list-thumb">
+                                            <h6 class="d-flex">
+                                                Corte de Cabelo para Crianças
+                                                <span class="price-list-thumb-divider"></span>
+                                                <strong>6.00€</strong>
+                                            </h6>
+                                        </div>
+
+                                        <div class="price-list-thumb">
+                                            <h6 class="d-flex">
+                                                Corte de Cabelo
+                                                <span class="price-list-thumb-divider"></span>
+                                                <strong>9.00€</strong>
+                                            </h6>
+                                        </div>
+
+                                        <div class="price-list-thumb">
+                                            <h6 class="d-flex">
+                                                Corte de Cabelo com Fade
+                                                <span class="price-list-thumb-divider"></span>
+                                                <strong>13.00€</strong>
+                                            </h6>
+                                        </div>
+
+                                        <div class="price-list-thumb">
+                                            <h6 class="d-flex">
+                                                Coloração do Cabelo
+                                                <span class="price-list-thumb-divider"></span>
+                                                <strong>20.00€</strong>
+                                            </h6>
+                                        </div>
+
+                                        <div class="price-list-thumb">
+                                            <h6 class="d-flex">
+                                                Aparar Barba
+                                                <span class="price-list-thumb-divider"></span>
+                                                <strong>5.50€</strong>
+                                            </h6>
+                                        </div>
+
+                                        <div class="price-list-thumb">
+                                            <h6 class="d-flex">
+                                                Aparar Barba com Fade
+                                                <span class="price-list-thumb-divider"></span>
+                                                <strong>7.99€</strong>
+                                            </h6>
+                                        </div>
+
+                                        <div class="price-list-thumb">
+                                            <h6 class="d-flex">
+                                                Coloração da Barba
+                                                <span class="price-list-thumb-divider"></span>
+                                                <strong>15.00€</strong>
+                                            </h6>
+                                        </div>
+
+                                        <div class="price-list-thumb">
+                                            <h6 class="d-flex">
+                                                Lavagem do Cabelo
+                                                <span class="price-list-thumb-divider"></span>
+                                                <strong>3.00€</strong>
+                                            </h6>
+                                        </div>
+
+                                        <div class="price-list-thumb">
+                                            <h6 class="d-flex">
+                                                Sobrancelha
+                                                <span class="price-list-thumb-divider"></span>
+                                                <strong>4.50€</strong>
+                                            </h6>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4 col-12 custom-block-bg-overlay-wrap mt-5 mb-5 mb-lg-0 mt-lg-0 pt-3 pt-lg-0">
+                                    <img src="../../images/barber-chair.png" class="custom-block-bg-overlay-image img-fluid" alt="">
+                                </div>
+
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="about-section section-padding" id="section_6">
+                        <div class="container">
+                            <div class="row">
+
+                                <div class="col-lg-12 col-12 mx-auto">
+                                    <h2 class="mb-4">Testemunhos</h2>
+
+                                    <div class="border-bottom pb-3 mb-5">
+                                        <p>
+                                            Na Game Of Barbers, cada corte é feito com honra e dedicação.
+                                            Aqui estão alguns testemunhos dos nossos guerreiros do estilo, que saíram do nosso salão prontos para conquistar qualquer reino.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <h6 class="mb-3">Clientes Satisfeitos:</h6>
+
+                               <div class="row g-4">
+                                    <!-- Card 1 -->
+                                    <div class="col-lg-4 col-12">
+                                        <div class="card h-100 border-0 text-light position-relative shadow-lg testimonial-card">
+                                            <img src="../../images/testimonials/cersei.webp" class="testimonial-img-top" alt="Cersei">
+                                            <div class="card-body d-flex flex-column justify-content-end align-items-center p-4 bg-dark bg-opacity-75 rounded-bottom">
+                                                <p class="fst-italic mb-2 text-white text-center">
+                                                    “Saí do salão sentindo-me confiante e pronta para qualquer desafio.”
+                                                </p>
+                                                <h6 class="fw-bold mb-0" style="color:#b48a3a;">— Cersei Lannister</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Card 2 -->
+                                    <div class="col-lg-4 col-12">
+                                        <div class="card h-100 border-0 text-light position-relative shadow-lg testimonial-card">
+                                            <img src="../../images/testimonials/sandor.webp" class="testimonial-img-top" alt="Sandor">
+                                            <div class="card-body d-flex flex-column justify-content-end align-items-center p-4 bg-dark bg-opacity-75 rounded-bottom">
+                                                <p class="fst-italic mb-2 text-white text-center">
+                                                    “Nunca tive um corte tão preciso. Entrei como um camponês e saí como um rei.”
+                                                </p>
+                                                <h6 class="fw-bold mb-0" style="color:#b48a3a;">— Sandor Clegane</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Card 3 -->
+                                    <div class="col-lg-4 col-12">
+                                        <div class="card h-100 border-0 text-light position-relative shadow-lg testimonial-card">
+                                            <img src="../../images/testimonials/khal.jpg" class="testimonial-img-top" alt="Khal Drogo">
+                                            <div class="card-body d-flex flex-column justify-content-end align-items-center p-4 bg-dark bg-opacity-75 rounded-bottom">
+                                                <p class="fst-italic mb-2 text-white text-center">
+                                                    “Recebi um algo único, a minha barba nunca esteve tão bem cuidada!”
+                                                </p>
+                                                <h6 class="fw-bold mb-0" style="color:#b48a3a;">— Khal Drogo</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </section>
+
+
+                    
+
+
+
+
+
+
+
+                    <section class="about-section section-padding" id="section_9">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-12 col-12">
+                                    <h2 class="mb-4" style="color:#3a2c1a; font-family:'Unbounded', sans-serif; font-weight:500; letter-spacing:0.5px;">FAQ - Perguntas Frequentes</h2>
+                                    <div class="border-bottom pb-2 mb-4">
+                                        <p class="mb-0" style="color:#6c757d; font-size:1rem; font-family:'Unbounded', sans-serif; font-weight:300;">
+                                            Precisa de ajuda? Veja as respostas para as dúvidas mais comuns dos nossos clientes de Westeros.
+                                        </p>
+                                    </div>
+                                    <div class="accordion" id="faqAccordion" style="background:transparent; width:100%; max-width:none; margin-left:0; font-size:1.15rem;">
+                                        <!-- FAQ 1 -->
+                                        <div class="accordion-item" style="border-radius:8px; border:1.5px solid black; margin-bottom:18px; background:#f8f5f0; font-size:1.13em;">
+                                            <h2 class="accordion-header" id="faqHeading1">
+                                                <button class="accordion-button py-3 px-4" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse1" aria-expanded="true" aria-controls="faqCollapse1" style="font-size:1.18rem; background:#f3e9da; color:#3a2c1a; font-family:'Unbounded',sans-serif; font-weight:400;">
+                                                    <i class="bi bi-person-check me-2" style="color:#b48a3a;"></i>Como posso marcar um corte digno de rei?
+                                                </button>
+                                            </h2>
+                                            <div id="faqCollapse1" class="accordion-collapse collapse show" aria-labelledby="faqHeading1" data-bs-parent="#faqAccordion">
+                                                <div class="accordion-body py-3 px-4" style="font-size:1.13rem; color:#4b3a23; background:#f8f5f0; font-family:'Unbounded',sans-serif; font-weight:300;">
+                                                    Basta preencher o formulário na secção <a href="#section_4" style="color:#b48a3a; text-decoration:underline;">Marcação</a> e escolher o território onde deseja ser atendido. Entraremos em contacto para confirmar o seu lugar no trono!
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- FAQ 2 -->
+                                        <div class="accordion-item" style="border-radius:8px; border:1px solid black; margin-bottom:10px; background:#f8f5f0;">
+                                            <h2 class="accordion-header" id="faqHeading2">
+                                                <button class="accordion-button collapsed py-3 px-4" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse2" aria-expanded="false" aria-controls="faqCollapse2" style="font-size:1.18rem; background:#f3e9da; color:#3a2c1a; font-family:'Unbounded',sans-serif; font-weight:400;">
+                                                    <i class="bi bi-scissors me-2" style="color:#b48a3a;"></i>Quais são os serviços inspirados em Game of Thrones?
+                                                </button>
+                                            </h2>
+                                            <div id="faqCollapse2" class="accordion-collapse collapse" aria-labelledby="faqHeading2" data-bs-parent="#faqAccordion">
+                                                <div class="accordion-body py-3 px-4" style="font-size:1.13rem; color:#4b3a23; background:#f8f5f0; font-family:'Unbounded',sans-serif; font-weight:300;">
+                                                    Oferecemos cortes, barbas, fades e colorações dignas dos lordes de Westeros. Cada serviço é realizado com atenção ao detalhe e honra, para que saia pronto a conquistar qualquer reino.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- FAQ 3 -->
+                                        <div class="accordion-item" style="border-radius:8px; border:1px solid black; margin-bottom:10px; background:#f8f5f0;">
+                                            <h2 class="accordion-header" id="faqHeading3">
+                                                <button class="accordion-button collapsed py-3 px-4" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse3" aria-expanded="false" aria-controls="faqCollapse3" style="font-size:1.18rem; background:#f3e9da; color:#3a2c1a; font-family:'Unbounded',sans-serif; font-weight:400;">
+                                                    <i class="bi bi-calendar-x me-2" style="color:#b48a3a;"></i>Posso cancelar ou reagendar a minha marcação?
+                                                </button>
+                                            </h2>
+                                            <div id="faqCollapse3" class="accordion-collapse collapse" aria-labelledby="faqHeading3" data-bs-parent="#faqAccordion">
+                                                <div class="accordion-body py-3 px-4" style="font-size:1.13rem; color:#4b3a23; background:#f8f5f0; font-family:'Unbounded',sans-serif; font-weight:300;">
+                                                    Sim! Tal como nas batalhas de Westeros, imprevistos acontecem. Pedimos apenas que nos avise com pelo menos 24 horas de antecedência para evitar taxas simbólicas.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- FAQ 4 -->
+                                        <div class="accordion-item" style="border-radius:8px; border:1px solid black; margin-bottom:10px; background:#f8f5f0;">
+                                            <h2 class="accordion-header" id="faqHeading6">
+                                                <button class="accordion-button collapsed py-3 px-4" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse6" aria-expanded="false" aria-controls="faqCollapse6" style="font-size:1.18rem; background:#f3e9da; color:#3a2c1a; font-family:'Unbounded',sans-serif; font-weight:400;">
+                                                    <i class="bi bi-clock-history me-2" style="color:#b48a3a;"></i>Qual é o horário de funcionamento?
+                                                </button>
+                                            </h2>
+                                            <div id="faqCollapse6" class="accordion-collapse collapse" aria-labelledby="faqHeading6" data-bs-parent="#faqAccordion">
+                                                <div class="accordion-body py-3 px-4" style="font-size:1.13rem; color:#4b3a23; background:#f8f5f0; font-family:'Unbounded',sans-serif; font-weight:300;">
+                                                    Estamos abertos todos os dias das 8:00 às 19:00, prontos para receber guerreiros de todos os reinos.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- FAQ 5 -->
+                                        <div class="accordion-item" style="border-radius:8px; border:1px solid black; margin-bottom:10px; background:#f8f5f0;">
+                                            <h2 class="accordion-header" id="faqHeading7">
+                                                <button class="accordion-button collapsed py-3 px-4" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse7" aria-expanded="false" aria-controls="faqCollapse7" style="font-size:1.18rem; background:#f3e9da; color:#3a2c1a; font-family:'Unbounded',sans-serif; font-weight:400;">
+                                                    <i class="bi bi-cash-coin me-2" style="color:#b48a3a;"></i>Quais métodos de pagamento aceitam?
+                                                </button>
+                                            </h2>
+                                            <div id="faqCollapse7" class="accordion-collapse collapse" aria-labelledby="faqHeading7" data-bs-parent="#faqAccordion">
+                                                <div class="accordion-body py-3 px-4" style="font-size:1.13rem; color:#4b3a23; background:#f8f5f0; font-family:'Unbounded',sans-serif; font-weight:300;">
+                                                    Aceitamos dinheiro, MB Way e cartões de débito/crédito. O ouro dos Sete Reinos ainda não é aceite!
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- FAQ 6 -->
+                                        <div class="accordion-item" style="border-radius:8px; border:1px solid black; margin-bottom:10px; background:#f8f5f0;">
+                                            <h2 class="accordion-header" id="faqHeading8">
+                                                <button class="accordion-button collapsed py-3 px-4" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse8" aria-expanded="false" aria-controls="faqCollapse8" style="font-size:1.18rem; background:#f3e9da; color:#3a2c1a; font-family:'Unbounded',sans-serif; font-weight:400;">
+                                                    <i class="bi bi-people me-2" style="color:#b48a3a;"></i>Posso levar acompanhantes ou crianças?
+                                                </button>
+                                            </h2>
+                                            <div id="faqCollapse8" class="accordion-collapse collapse" aria-labelledby="faqHeading8" data-bs-parent="#faqAccordion">
+                                                <div class="accordion-body py-3 px-4" style="font-size:1.13rem; color:#4b3a23; background:#f8f5f0; font-family:'Unbounded',sans-serif; font-weight:300;">
+                                                    Sim! O salão é preparado para receber famílias e grupos, incluindo pequenos guerreiros.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+
+                    <section class="contact-section" id="section_10">
+                        <div class="section-padding">
+                            <div class="container">
+                                <div class="row">
+
+                                    <div class="col-lg-6 col-12">
+                                        <h5 class="mb-3"><strong>Informações de</strong> Contacto</h5>
+
+                                        <p class="text-white d-flex mb-1">
+                                            <a href="tel:120-240-3600" class="site-footer-link">
+                                                (+251) 210-000-000
+                                            </a>
+                                        </p>
+
+                                        <p class="text-white d-flex">
+                                            <a href="mailto:GameOfBarbers@gmail.com" class="site-footer-link">
+                                                gameofbarbers@gmail.com
+                                            </a>
+                                        </p>
+                                    </div>
+
+                                    <div class="col-lg-5 col-12 contact-block-wrap mt-5 mt-lg-0 pt-4 pt-lg-0 mx-auto">
+                                        <div class="contact-block">
+                                            <h6 class="mb-0">
+                                                <i class="custom-icon bi-shop me-3"></i>
+                                                <strong>Aberto Todos os Dias</strong>
+                                                <span class="ms-auto">8:00 - 19:00</span>
+                                            </h6>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <footer class="site-footer">
+                        <div class="container">
+                            <div class="row">
+
+                                <div class="col-lg-12 col-12">
+                                    <h4 class="site-footer-title mb-4">Os Nossos Territórios</h4>
+                                </div>
+
+                                <div class="col-lg-4 col-md-6 col-11">
+                                    <strong class="mb-1">King's Landing</strong>
+                                    <p>Praça Dom Pedro IV, 1100-200 Lisboa, Portugal</p>
+                                </div>
+
+                                <div class="col-lg-4 col-md-6 col-11">
+                                    <strong class="mb-1">The Reach</strong>
+                                    <p>Av. da Boavista 1269, 4100-130 Porto, Portugal</p>
+                                </div>
+
+                                <div class="col-lg-4 col-md-6 col-11">
+                                    <strong class="mb-1">The Vale</strong>
+                                    <p>Av. Marquês de Pombal, 2410-152 Leiria, Portugal</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="site-footer-bottom">
+                            <div class="container">
+                                <div class="row align-items-center">
+
+                                    <div class="col-lg-8 col-12 mt-4">
+                                        <p class="copyright-text mb-0">
+                                            Diogo Chaves - Copyright © 2026
+                                        </p>
+                                    </div>
+
+                                    <div class="col-lg-2 col-md-3 col-3 mt-lg-4 ms-auto">
+                                        <a href="#section_1" class="back-top-icon smoothscroll" title="Voltar ao Topo">
+                                            <i class="bi-arrow-up-circle"></i>
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+
+
+            
+            <!-- MODALS -->
+            <!-- Politics Modal -->
+            <div class="modal fade" id="politicsModal" tabindex="-1" aria-labelledby="politicsModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-xl" style="max-height: 90vh;">
+                    <div class="modal-content" style="max-height: 90vh; display: flex; flex-direction: column;">
+                        <div class="modal-header">
+                            <h5 class="modal-title text-center w-100" id="politicsModalLabel"><i class="bi bi-shield-lock-fill me-2 text-primary"></i>Game Of Barbers</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body" style="overflow-y: auto; flex: 1; font-size: 0.95rem;">
+                            <header class="mb-5 text-center">
+                                <h1 class="display-5 fw-bold">Política de Privacidade</h1>
+                                <p class="lead">Game Of Barbers - Barbearia Profissional</p>
+                                <p>A sua privacidade é importante para nós. Esta Política de Privacidade explica como o website <strong>Game Of Barbers - Barbearia Profissional</strong> recolhe, utiliza e protege as informações dos seus utilizadores. Este website foi desenvolvido no âmbito de um projeto escolar.</p>
+                            </header>
+
+                            <section class="mb-4">
+                                <h3>1. Responsável pelo Tratamento de Dados</h3>
+                                <p>O responsável pelo tratamento dos dados pessoais recolhidos através deste website é:</p>
+                                <ul>
+                                    <li><strong>Nome do projeto:</strong> Game Of Barbers - Barbearia Profissional</li>
+                                    <li><strong>Finalidade:</strong> Projeto escolar (fictício)</li>
+                                    <li><strong>Contacto:</strong> <a href="mailto:gameofbarbers@gmail.com">gameofbarbers@gmail.com</a></li>
+                                </ul>
+                            </section><br>
+
+                            <section class="mb-4">
+                                <h3>2. Dados Pessoais Recolhidos</h3>
+                                <p>O website pode recolher os seguintes dados pessoais, apenas para fins demonstrativos:</p>
+                                <ul>
+                                    <li>Nome</li>
+                                    <li>Endereço de e-mail</li>
+                                    <li>Número de telefone</li>
+                                    <li>Mensagens enviadas através de formulários de contacto</li>
+                                </ul>
+                                <p>⚔️ Tal como em Westeros, os seus dados são guardados com honra e responsabilidade.</p>
+                            </section><br>
+
+                            <section class="mb-4">
+                                <h3>3. Finalidade da Recolha de Dados</h3>
+                                <p>Os dados pessoais recolhidos são utilizados para:</p>
+                                <ul>
+                                    <li>Simular marcações de serviços de barbearia</li>
+                                    <li>Responder a pedidos de contacto</li>
+                                    <li>Demonstrar o funcionamento de um website profissional</li>
+                                    <li>Fins académicos</li>
+                                </ul>
+                                <p>Os dados <strong>não são utilizados para fins comerciais reais</strong>.</p>
+                            </section><br>
+
+                            <section class="mb-4">
+                                <h3>4. Conservação dos Dados</h3>
+                                <p>Os dados pessoais são conservados apenas durante o período necessário para a realização do projeto escolar e não são partilhados com terceiros.</p>
+                            </section><br>
+
+                            <section class="mb-4">
+                                <h3>5. Partilha de Dados</h3>
+                                <p>A <strong>Game Of Barbers</strong> não vende, troca ou transfere os seus dados pessoais para terceiros.</p>
+                            </section><br>
+
+                            <section class="mb-4">
+                                <h3>6. Cookies</h3>
+                                <p>Este website pode utilizar cookies apenas para fins de demonstração, como:</p>
+                                <ul>
+                                    <li>Melhorar a experiência do utilizador</li>
+                                    <li>Analisar o funcionamento do website</li>
+                                </ul>
+                                <p>O utilizador pode desativar os cookies nas definições do seu navegador.</p>
+                            </section><br>
+
+                            <section class="mb-4">
+                                <h3>7. Direitos do Utilizador</h3>
+                                <p>De acordo com o Regulamento Geral sobre a Proteção de Dados (RGPD), o utilizador tem direito a:</p>
+                                <ul>
+                                    <li>Aceder aos seus dados pessoais</li>
+                                    <li>Retificar dados incorretos</li>
+                                    <li>Solicitar a eliminação dos dados</li>
+                                    <li>Retirar o consentimento</li>
+                                </ul>
+                                <p>Para exercer estes direitos, pode entrar em contacto através do e-mail indicado acima.</p>
+                            </section><br>
+
+                            <section class="mb-4">
+                                <h3>8. Segurança dos Dados</h3>
+                                <p>São aplicadas medidas básicas de segurança para proteger os dados pessoais contra acesso não autorizado, perda ou divulgação indevida.</p>
+                            </section><br>
+
+                            <section class="mb-4">
+                                <h3>9. Alterações a esta Política de Privacidade</h3>
+                                <p>Esta Política de Privacidade pode ser atualizada a qualquer momento para refletir alterações no projeto ou requisitos legais.</p>
+                            </section><br>
+
+                            <section class="mb-4">
+                                <h3>10. Contactos</h3>
+                                <p>Se tiver alguma questão sobre esta Política de Privacidade, pode contactar-nos através de:</p>
+                                <p>📧 <a href="mailto:gameofbarbers@gmail.com">gameofbarbers@gmail.com</a></p>
+                            </section>
+
+                            <footer class="text-center mt-5">
+                                <p>Game Of Barbers - Onde cada corte honra o trono 👑✂️</p>
+                            </footer>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Conditions Modal -->
+            <div class="modal fade" id="conditionsModal" tabindex="-1" aria-labelledby="conditionsModalLabel" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
+                <div class="modal-dialog modal-xl" style="max-height: 90vh;">
+                    <div class="modal-content" style="max-height: 90vh; display: flex; flex-direction: column;">
+                        <div class="modal-header">
+                            <h5 class="modal-title text-center w-100" id="conditionsModalLabel" ><i class="bi bi-file-earmark-text-fill me-2 text-primary"></i>Game Of Barbers</h5>
+                        </div>
+                        <div class="modal-body" style="overflow-y: auto; flex: 1; font-size: 0.95rem;">
+                            <header class="mb-5 text-center">
+                                <h1 class="display-5 " >Termos e Condições</h1>
+                                <p class="lead">Game Of Barbers - Barbearia Profissional</p>
+                                <p>Bem-vindo aos Termos e Condições da Game Of Barbers. Este documento estabelece os direitos e responsabilidades entre a barbearia e seus clientes. Ao utilizar nossos serviços, você concorda com estes termos.</p>
+                            </header>
+
+                            <section class="mb-4">
+                                <h3><span class="me-2"></span>1. Utilização do Serviço</h3>
+                                <p>
+                                    Ao aceder e utilizar os serviços da <strong>Game Of Barbers - Barbearia Profissional</strong>, o utilizador concorda com os termos aqui descritos.
+                                    Compromete-se a fornecer informações verdadeiras e atualizadas, sendo responsável pela confidencialidade dos seus dados pessoais e de acesso.
+                                </p>
+                            </section><br>
+                            
+                            <section class="mb-4">
+                                <h3><span class="me-2"></span>2. Marcações e Cancelamentos</h3>
+                                <p>
+                                    As marcações devem ser efetuadas com, no mínimo, 24 horas de antecedência.
+                                    Caso seja necessário cancelar ou reagendar, o utilizador deverá fazê-lo também com pelo menos 24 horas de aviso.
+                                    O não cumprimento deste prazo poderá resultar na aplicação de uma taxa simbólica.
+                                </p>
+                            </section><br>
+                            
+                            <section class="mb-4">
+                                <h3><span class="me-2"></span>3. Política de Reembolso</h3>
+                                <p>
+                                    A Game Of Barbers preza pela honra e satisfação dos seus clientes.
+                                    O reembolso total poderá ser solicitado caso o serviço não seja realizado conforme acordado ou não corresponda às expectativas.
+                                    O pedido deve ser efetuado no prazo máximo de 7 dias após a realização do serviço.
+                                </p>
+                            </section><br>
+                            
+                            <section class="mb-4">
+                                <h3><span class="me-2"></span>4. Proteção de Dados e Privacidade</h3>
+                                <p>
+                                    Todos os dados pessoais recolhidos são utilizados exclusivamente para fins de marcação, contacto e melhoria dos nossos serviços.
+                                    Comprometemo-nos a não partilhar informações com terceiros, garantindo a segurança e confidencialidade dos dados, em conformidade com a legislação em vigor.
+                                </p>
+                            </section><br>
+                            
+                            <section class="mb-4">
+                                <h3><span class="me-2"></span>5. Limitação de Responsabilidade</h3>
+                                <p>
+                                    A Game Of Barbers não se responsabiliza por danos indiretos ou situações fora do seu controlo.
+                                    A responsabilidade da barbearia está limitada ao valor pago pelo serviço contratado.
+                                </p>
+                            </section><br>
+                            
+                            <section class="mb-4">
+                                <h3><span class="me-2"></span>6. Alterações aos Termos</h3>
+                                <p>
+                                    Reservamo-nos o direito de alterar esta política sempre que necessário.
+                                    Quaisquer mudanças relevantes serão comunicadas aos utilizadores através dos meios de contacto disponibilizados.
+                                    O uso contínuo dos serviços após as alterações será considerado como aceitação dos novos termos.
+                                </p>
+                            </section><br>
+
+                            <footer class="text-center mt-5">
+                                <p>Game Of Barbers - Onde cada corte honra o trono 👑✂️</p>
+                            </footer>
+                        </div>
+                        <div class="modal-footer">
+                            <button id="conditionsDenyBtn" type="button" class="btn btn-danger"><i class="bi bi-x-circle me-2"></i>Recusar</button>
+                            <button id="conditionsAcceptBtn" type="button" class="btn btn-success"><i class="bi bi-check-circle me-2"></i>Aceitar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        <!-- JAVASCRIPT FILES -->
+        <script src="../../js/jquery.min.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
+        <script src="../../js/click-scroll.js"></script>
+        <script src="../../js/custom.js"></script>
+        <script src="../../js/first-login.js"></script>
+
+    </body>
+</html>
