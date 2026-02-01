@@ -6,6 +6,7 @@ The website is built **100% with HTML, CSS, and jQuery**, with no database, and 
 
 This project is ideal for learning front-end development, responsive layouts, and basic interactivity.
 
+Check out my Barber Shop website live on GitHub Pages: [Link](https://diogomokey.github.io/Barber_Shop_Html_TI25-26)
 
 ---
 
