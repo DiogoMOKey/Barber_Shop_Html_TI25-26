@@ -1,57 +1,60 @@
-🏰 Game Of Barbers – Barbearia Profissional ✂️
+# 🏰 Game Of Barbers – Professional Barbershop ✂️
 
-Descrição:
-Game Of Barbers é um projeto escolar que simula uma pequena barbearia profissional, com tema inspirado em Game of Thrones 🗡️🔥.
-O site é feito 100% em HTML, CSS e jQuery, sem base de dados, e suporta multi-linguagem 🌐.
+**Description**  
+Game Of Barbers is a school project that simulates a small professional barbershop, with a theme inspired by *Game of Thrones* 🗡️🔥.  
+The website is built **100% with HTML, CSS, and jQuery**, with no database, and supports **multi-language 🌐**.
 
-Este projeto é ideal para estudo de front-end, layout responsivo e interatividade simples.
+This project is ideal for learning front-end development, responsive layouts, and basic interactivity.
 
-📂 Estrutura do Projeto
+---
+
+## 📂 Project Structure
+
 /game-of-barbers
 │
-├─ index.html          # Página root, faz redirect para os ficheiros
-├─ /css               # Estilos do site 🎨
-├─ /js                # Scripts jQuery ⚡
-├─ /images            # Imagens e assets 🖼️
-└─ /lang              # Arquivos de tradução 🌐
+├─ index.html # Root page, redirects to the project files
+├─ /css # Site styles 🎨
+├─ /js # jQuery scripts ⚡
+├─ /images # Images and assets 🖼️
+└─ /html # Project pages 🌐
 
-✨ Funcionalidades
 
-🏰 Tema inspirado em Game of Thrones.
+---
 
-🖱️ Navegação simples e intuitiva.
+## ✨ Features
 
-🌐 Multi-linguagem (português, inglês, etc.).
+- 🏰 Theme inspired by *Game of Thrones*  
+- 🖱️ Simple and intuitive navigation  
+- 🌐 Multi-language support (Portuguese, English, etc.)  
+- 📱 Responsive layout for desktop and mobile  
+- ⚡ Interactivity via jQuery (menus, animations, redirects)  
 
-📱 Layout responsivo para desktop e mobile.
 
-⚡ Interatividade via jQuery (menu, animações, redirecionamentos).
+---
 
-🛠️ Tecnologias Utilizadas
+## 🛠️ Technologies Used
 
-HTML5 – Estrutura do site 📄
+- **HTML5** – Website structure 📄  
+- **CSS3** – Styling and responsiveness 🎨  
+- **jQuery** – Interactivity scripts ⚡  
 
-CSS3 – Estilos e responsividade 🎨
+> Fully front-end, no back-end or database 🚫💾
 
-jQuery – Scripts para interatividade ⚡
 
-Sem back-end ou base de dados, totalmente front-end 🚫💾
+---
 
-🚀 Como Usar
+## 🚀 How to Use
 
-Clone este repositório:
+1. Clone this repository:
 
+```bash
 git clone https://github.com/usuario/game-of-barbers.git
+```
 
 
-Abra index.html em qualquer navegador moderno 🌐
+2. Open the project in your browser and explore the pages.
 
-Navegue pelo site e experimente a mudança de idioma, menus e animações ✂️
+## 🤝 Contribution
 
-🤝 Contribuição
+This project is educational 🎓. Feel free to study, modify, and experiment!
 
-Este projeto é educativo 🎓. Sugestões de melhoria podem ser discutidas através de issues ou pull requests 💡.
-
-📜 Licença
-
-Projeto para fins acadêmicos, sem licença comercial ⚠️
