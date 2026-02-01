@@ -6,18 +6,6 @@ The website is built **100% with HTML, CSS, and jQuery**, with no database, and 
 
 This project is ideal for learning front-end development, responsive layouts, and basic interactivity.
 
----
-
-## 📂 Project Structure
-
-/game-of-barbers
-│
-├─ index.html # Root page, redirects to the project files
-├─ /css # Site styles 🎨
-├─ /js # jQuery scripts ⚡
-├─ /images # Images and assets 🖼️
-└─ /html # Project pages 🌐
-
 
 ---
 
