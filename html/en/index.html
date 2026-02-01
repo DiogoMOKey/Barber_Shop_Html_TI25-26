@@ -16,7 +16,49 @@
 
         <link href="../../css/bootstrap.min.css" rel="stylesheet">
         <link href="../../css/bootstrap-icons.css" rel="stylesheet">
-        <link href="../../css/barber-shop.css" rel="stylesheet">
+        <link href="../../css/barber.css" rel="stylesheet">
+
+        <script>
+            window.lang = "EN"
+            window.products = [
+                { 
+                    name: "Haircut", price: 9.00, image: "barber-cutting-hair.png",
+                    description: "A classic and elegant haircut, forged like a Valyrian steel sword, to keep your style sharp and commanding."
+                },
+                { 
+                    name: "Fade Haircut", price: 13.00, image: "barber-cutting-fade.png",
+                    description: "The perfect fade, sculpted with the precision of a master blacksmith from Winterfell, for a modern and fearless look."
+                },
+                { 
+                    name: "Hair Coloring", price: 20.00, image: "hairdresser-painting-client.png",
+                    description: "Transform your hair with colors worthy of a queen or king of the Seven Kingdoms, highlighting your strength and personality."
+                },
+                { 
+                    name: "Beard Trim", price: 5.50, image: "hairdresser-grooming-client.jpg",
+                    description: "Trim your beard like a true warrior, maintaining the power and respect of anyone who crosses the walls."
+                },
+                { 
+                    name: "Fade Beard Trim", price: 7.99, image: "barber-cutting-fade-beard.png",
+                    description: "A fade on the beard worthy of a Lord of Westeros: clean, elegant, and ready to command any salon in the kingdom."
+                },
+                { 
+                    name: "Beard Coloring", price: 15.00, image: "barber-painting-beard.png",
+                    description: "Give your beard the power of a dragon with intense, sophisticated colors, leaving your presence unmistakable."
+                },
+                { 
+                    name: "Hair Wash", price: 3.00, image: "barber-washing-hair-client.png",
+                    description: "Revitalize your hair with a wash worthy of the royal baths of King's Landing, gentle and relaxing like the Northern breeze."
+                },
+                { 
+                    name: "Eyebrows", price: 4.50, image: "barber-cutting-hairbrow.png",
+                    description: "Eyebrows sculpted with a warrior's precision, ensuring expression and gaze that intimidate any enemy."
+                },
+                { 
+                    name: "Kids Haircut", price: 6.00, image: "barber-cutting-boys-hair.jpg",
+                    description: "For the little knights and maidens, a haircut worthy of future lords of the realm, with style and comfort guaranteed."
+                }
+            ];
+        </script>
     </head>
     
     <body>
@@ -61,13 +103,10 @@
                                     <a class="nav-link click-scroll" href="#section_2">Our History</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link click-scroll" href="#section_3">Services</a>
+                                    <a class="nav-link click-scroll" href="#section_3">Store</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link click-scroll" href="#section_4">Booking</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link click-scroll" href="#section_5">Prices</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link click-scroll" href="#section_6">Testimonials</a>
@@ -104,7 +143,7 @@
                                         <a class="btn custom-btn custom-border-btn custom-btn-bg-white smoothscroll me-2 mb-2" href="#section_2">About Us</a>
                                         <button type="button" class="btn custom-btn custom-border-btn custom-btn-bg-white me-2 mb-2" data-bs-toggle="modal" data-bs-target="#politicsModal">Policies</button>
                                         <button type="button" class="btn custom-btn custom-border-btn custom-btn-bg-white me-2 mb-2" data-bs-toggle="modal" data-bs-target="#conditionsModal">Terms &amp; Conditions</button>
-                                        <a class="btn custom-btn smoothscroll mb-2" href="#section_3">What We Do</a>
+                                        <a class="btn custom-btn smoothscroll mb-2" href="#section_3">Store</a>
 
                                     </div>
                                 </div>
@@ -194,125 +233,19 @@
                     </section>
 
 
-                  <section class="services-section section-padding" id="section_3">
+                    <section class="services-section section-padding" id="section_3">
                         <div class="container">
                             <div class="row">
-
                                 <div class="col-lg-12 col-12">
-                                    <h2 class="mb-5">Services</h2>
+                                    <h2 class="mb-3">Store</h2>
                                 </div>
 
-                                <div class="col-lg-4 col-12 mb-4">
-                                    <div class="services-thumb">
-                                        <img src="../../images/services/barber-cutting-hair.png" class="services-image img-fluid" alt="">
-
-                                        <div class="services-info d-flex align-items-end">
-                                            <h4 class="mb-0">Haircut</h4>
-
-                                            <strong class="services-thumb-price">9.00€</strong>
-                                        </div>
-                                    </div>
+                                <div class="row" id="products">
                                 </div>
-
-                                <div class="col-lg-4 col-12 mb-4">
-                                    <div class="services-thumb">
-                                        <img src="../../images/services/barber-cutting-fade.png" class="services-image img-fluid" alt="">
-
-                                        <div class="services-info d-flex align-items-end">
-                                            <h4 class="mb-0">Fade Haircut</h4>
-
-                                            <strong class="services-thumb-price">13.00€</strong>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-4 col-12 mb-4">
-                                    <div class="services-thumb">
-                                        <img src="../../images/services/hairdresser-painting-client.png" class="services-image img-fluid" alt="">
-
-                                        <div class="services-info d-flex align-items-end">
-                                                <h4 class="mb-0">Colored Hair</h4>
-
-                                            <strong class="services-thumb-price">20.00€</strong>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-4 col-12 mb-4 ">
-                                    <div class="services-thumb">
-                                        <img src="../../images/services/hairdresser-grooming-client.jpg" class="services-image img-fluid" alt="">
-
-                                        <div class="services-info d-flex align-items-end">
-                                            <h4 class="mb-0">Beard</h4>
-
-                                            <strong class="services-thumb-price">5.50€</strong>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-4 col-12 mb-4 ">
-                                    <div class="services-thumb">
-                                        <img src="../../images/services/barber-cutting-fade-beard.png" class="services-image img-fluid" alt="">
-
-                                        <div class="services-info d-flex align-items-end">
-                                            <h4 class="mb-0">Fade Beard</h4>
-
-                                            <strong class="services-thumb-price">7.99€</strong>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-4 col-12 mb-4">
-                                    <div class="services-thumb">
-                                        <img src="../../images/services/barber-painting-beard.png" class="services-image img-fluid" alt="">
-
-                                        <div class="services-info d-flex align-items-end">
-                                            <h4 class="mb-0">Colored Beard</h4>
-
-                                            <strong class="services-thumb-price">15.00€</strong>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-4 col-12 mb-4">
-                                    <div class="services-thumb">
-                                        <img src="../../images/services/barber-washing-hair-client.png" class="services-image img-fluid" alt="">
-
-                                        <div class="services-info d-flex align-items-end">
-                                            <h4 class="mb-0">Hair Wash</h4>
-
-                                            <strong class="services-thumb-price">3.00€</strong>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-4 col-12 mb-4 mb-lg-0">
-                                    <div class="services-thumb">
-                                        <img src="../../images/services/barber-cutting-hairbrow.png" class="services-image img-fluid" alt="">
-
-                                        <div class="services-info d-flex align-items-end">
-                                            <h4 class="mb-0">Eyebrows</h4>
-
-                                            <strong class="services-thumb-price">4.50€</strong>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-4 col-12">
-                                    <div class="services-thumb">
-                                        <img src="../../images/services/barber-cutting-boys-hair.jpg" class="services-image img-fluid" alt="">
-
-                                        <div class="services-info d-flex align-items-end">
-                                            <h4 class="mb-0">Kids</h4>
-
-                                            <strong class="services-thumb-price">6.00€</strong>
-                                        </div>
-                                    </div>
-                                </div>
-
                             </div>
                         </div>
                     </section>
+
 
                     <section class="booking-section section-padding" id="section_4">
                         <div class="container">
@@ -361,6 +294,13 @@
 
                                             <textarea name="bb-message" rows="3" class="form-control" id="bb-message" placeholder="Comment (Optional)"></textarea>
 
+                                            <div class="form-check my-5">
+                                                <input type="checkbox" class="form-check-input" id="bb-consent" name="bb-consent" required>
+                                                <label class="form-check-label" for="bb-consent" style="color:#717275;">
+                                                    I agree that my data may be used for booking.                                                
+                                                </label>
+                                            </div>
+
                                             <div class="col-lg-4 col-md-10 col-8 mx-auto">
                                                 <button type="submit" class="form-control">Submit</button>
                                             </div>
@@ -371,7 +311,7 @@
                         </div>
                     </section>
 
-                  <section class="price-list-section section-padding" id="section_5">
+                    <section class="price-list-section section-padding" id="section_5">
                         <div class="container">
                             <div class="row">
 
@@ -716,198 +656,237 @@
             <!-- MODALS -->
             <!-- Politics Modal -->
             <div class="modal fade" id="politicsModal" tabindex="-1" aria-labelledby="politicsModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-xl" style="max-height: 90vh;">
-                <div class="modal-content" style="max-height: 90vh; display: flex; flex-direction: column;">
-                    <div class="modal-header">
-                        <h5 class="modal-title text-center w-100" id="politicsModalLabel">
-                            <i class="bi bi-shield-lock-fill me-2 text-primary"></i>Game Of Barbers
-                        </h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body" style="overflow-y: auto; flex: 1; font-size: 0.95rem;">
-                        <header class="mb-5 text-center">
-                            <h1 class="display-5 fw-bold">Privacy Policy</h1>
-                            <p class="lead">Game Of Barbers - Professional Barbershop</p>
-                            <p>Your privacy is important to us. This Privacy Policy explains how the website <strong>Game Of Barbers - Professional Barbershop</strong> collects, uses, and protects user information. This website was developed as part of a school project.</p>
-                        </header>
+                <div class="modal-dialog modal-xl" style="max-height: 90vh;">
+                    <div class="modal-content" style="max-height: 90vh; display: flex; flex-direction: column;">
+                        <div class="modal-header">
+                            <h5 class="modal-title text-center w-100" id="politicsModalLabel">
+                                <i class="bi bi-shield-lock-fill me-2 text-primary"></i>Game Of Barbers
+                            </h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body" style="overflow-y: auto; flex: 1; font-size: 0.95rem;">
+                            <header class="mb-5 text-center">
+                                <h1 class="display-5 fw-bold">Privacy Policy</h1>
+                                <p class="lead">Game Of Barbers - Professional Barbershop</p>
+                                <p>Your privacy is important to us. This Privacy Policy explains how the website <strong>Game Of Barbers - Professional Barbershop</strong> collects, uses, and protects user information. This website was developed as part of a school project.</p>
+                            </header>
 
-                        <section class="mb-4">
-                            <h3>1. Data Controller</h3>
-                            <p>The entity responsible for processing personal data collected through this website is:</p>
-                            <ul>
-                                <li><strong>Project name:</strong> Game Of Barbers - Professional Barbershop</li>
-                                <li><strong>Purpose:</strong> School project (fictional)</li>
-                                <li><strong>Contact:</strong> <a href="mailto:gameofbarbers@gmail.com">gameofbarbers@gmail.com</a></li>
-                            </ul>
-                        </section><br>
+                            <section class="mb-4">
+                                <h3>1. Data Controller</h3>
+                                <p>The entity responsible for processing personal data collected through this website is:</p>
+                                <ul>
+                                    <li><strong>Project name:</strong> Game Of Barbers - Professional Barbershop</li>
+                                    <li><strong>Purpose:</strong> School project (fictional)</li>
+                                    <li><strong>Contact:</strong> <a href="mailto:gameofbarbers@gmail.com">gameofbarbers@gmail.com</a></li>
+                                </ul>
+                            </section><br>
 
-                        <section class="mb-4">
-                            <h3>2. Personal Data Collected</h3>
-                            <p>The website may collect the following personal data, for demonstration purposes only:</p>
-                            <ul>
-                                <li>Name</li>
-                                <li>Email address</li>
-                                <li>Phone number</li>
-                                <li>Messages sent through contact forms</li>
-                            </ul>
-                            <p>⚔️ Just like in Westeros, your data is kept with honor and responsibility.</p>
-                        </section><br>
+                            <section class="mb-4">
+                                <h3>2. Personal Data Collected</h3>
+                                <p>The website may collect the following personal data, for demonstration purposes only:</p>
+                                <ul>
+                                    <li>Name</li>
+                                    <li>Email address</li>
+                                    <li>Phone number</li>
+                                    <li>Messages sent through contact forms</li>
+                                </ul>
+                                <p>⚔️ Just like in Westeros, your data is kept with honor and responsibility.</p>
+                            </section><br>
 
-                        <section class="mb-4">
-                            <h3>3. Purpose of Data Collection</h3>
-                            <p>The collected personal data is used to:</p>
-                            <ul>
-                                <li>Simulate barbershop service bookings</li>
-                                <li>Respond to contact requests</li>
-                                <li>Demonstrate the operation of a professional website</li>
-                                <li>Academic purposes</li>
-                            </ul>
-                            <p>The data <strong>is not used for real commercial purposes</strong>.</p>
-                        </section><br>
+                            <section class="mb-4">
+                                <h3>3. Purpose of Data Collection</h3>
+                                <p>The collected personal data is used to:</p>
+                                <ul>
+                                    <li>Simulate barbershop service bookings</li>
+                                    <li>Respond to contact requests</li>
+                                    <li>Demonstrate the operation of a professional website</li>
+                                    <li>Academic purposes</li>
+                                </ul>
+                                <p>The data <strong>is not used for real commercial purposes</strong>.</p>
+                            </section><br>
 
-                        <section class="mb-4">
-                            <h3>4. Data Retention</h3>
-                            <p>Personal data is stored only for the period necessary to carry out the school project and is not shared with third parties.</p>
-                        </section><br>
+                            <section class="mb-4">
+                                <h3>4. Data Retention</h3>
+                                <p>Personal data is stored only for the period necessary to carry out the school project and is not shared with third parties.</p>
+                            </section><br>
 
-                        <section class="mb-4">
-                            <h3>5. Data Sharing</h3>
-                            <p><strong>Game Of Barbers</strong> does not sell, trade, or transfer your personal data to third parties.</p>
-                        </section><br>
+                            <section class="mb-4">
+                                <h3>5. Data Sharing</h3>
+                                <p><strong>Game Of Barbers</strong> does not sell, trade, or transfer your personal data to third parties.</p>
+                            </section><br>
 
-                        <section class="mb-4">
-                            <h3>6. Cookies</h3>
-                            <p>This website may use cookies for demonstration purposes only, such as:</p>
-                            <ul>
-                                <li>Improving user experience</li>
-                                <li>Analyzing website performance</li>
-                            </ul>
-                            <p>Users can disable cookies in their browser settings.</p>
-                        </section><br>
+                            <section class="mb-4">
+                                <h3>6. Cookies</h3>
+                                <p>This website may use cookies for demonstration purposes only, such as:</p>
+                                <ul>
+                                    <li>Improving user experience</li>
+                                    <li>Analyzing website performance</li>
+                                </ul>
+                                <p>Users can disable cookies in their browser settings.</p>
+                            </section><br>
 
-                        <section class="mb-4">
-                            <h3>7. User Rights</h3>
-                            <p>In accordance with the General Data Protection Regulation (GDPR), users have the right to:</p>
-                            <ul>
-                                <li>Access their personal data</li>
-                                <li>Correct inaccurate data</li>
-                                <li>Request data deletion</li>
-                                <li>Withdraw consent</li>
-                            </ul>
-                            <p>To exercise these rights, please contact us via the email above.</p>
-                        </section><br>
+                            <section class="mb-4">
+                                <h3>7. User Rights</h3>
+                                <p>In accordance with the General Data Protection Regulation (GDPR), users have the right to:</p>
+                                <ul>
+                                    <li>Access their personal data</li>
+                                    <li>Correct inaccurate data</li>
+                                    <li>Request data deletion</li>
+                                    <li>Withdraw consent</li>
+                                </ul>
+                                <p>To exercise these rights, please contact us via the email above.</p>
+                            </section><br>
 
-                        <section class="mb-4">
-                            <h3>8. Data Security</h3>
-                            <p>Basic security measures are applied to protect personal data against unauthorized access, loss, or improper disclosure.</p>
-                        </section><br>
+                            <section class="mb-4">
+                                <h3>8. Data Security</h3>
+                                <p>Basic security measures are applied to protect personal data against unauthorized access, loss, or improper disclosure.</p>
+                            </section><br>
 
-                        <section class="mb-4">
-                            <h3>9. Changes to this Privacy Policy</h3>
-                            <p>This Privacy Policy may be updated at any time to reflect changes to the project or legal requirements.</p>
-                        </section><br>
+                            <section class="mb-4">
+                                <h3>9. Changes to this Privacy Policy</h3>
+                                <p>This Privacy Policy may be updated at any time to reflect changes to the project or legal requirements.</p>
+                            </section><br>
 
-                        <section class="mb-4">
-                            <h3>10. Contact</h3>
-                            <p>If you have any questions regarding this Privacy Policy, you may contact us at:</p>
-                            <p>📧 <a href="mailto:gameofbarbers@gmail.com">gameofbarbers@gmail.com</a></p>
-                        </section>
+                            <section class="mb-4">
+                                <h3>10. Contact</h3>
+                                <p>If you have any questions regarding this Privacy Policy, you may contact us at:</p>
+                                <p>📧 <a href="mailto:gameofbarbers@gmail.com">gameofbarbers@gmail.com</a></p>
+                            </section>
 
-                        <footer class="text-center mt-5">
-                            <p>Game Of Barbers - Where every cut honors the throne 👑✂️</p>
-                        </footer>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Conditions Modal -->
-        <div class="modal fade" id="conditionsModal" tabindex="-1" aria-labelledby="conditionsModalLabel" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
-            <div class="modal-dialog modal-xl" style="max-height: 90vh;">
-                <div class="modal-content" style="max-height: 90vh; display: flex; flex-direction: column;">
-                    <div class="modal-header">
-                        <h5 class="modal-title text-center w-100" id="conditionsModalLabel">
-                            <i class="bi bi-file-earmark-text-fill me-2 text-primary"></i>Game Of Barbers
-                        </h5>
-                    </div>
-                    <div class="modal-body" style="overflow-y: auto; flex: 1; font-size: 0.95rem;">
-                        <header class="mb-5 text-center">
-                            <h1 class="display-5">Terms and Conditions</h1>
-                            <p class="lead">Game Of Barbers - Professional Barbershop</p>
-                            <p>Welcome to the Terms and Conditions of Game Of Barbers. This document establishes the rights and responsibilities between the barbershop and its clients. By using our services, you agree to these terms.</p>
-                        </header>
-
-                        <section class="mb-4">
-                            <h3>1. Service Use</h3>
-                            <p>
-                                By accessing and using the services of <strong>Game Of Barbers - Professional Barbershop</strong>, the user agrees to the terms described herein.
-                                The user commits to providing truthful and up-to-date information and is responsible for maintaining the confidentiality of personal and access data.
-                            </p>
-                        </section><br>
-
-                        <section class="mb-4">
-                            <h3>2. Appointments and Cancellations</h3>
-                            <p>
-                                Appointments must be made at least 24 hours in advance.
-                                If cancellation or rescheduling is necessary, the user must also provide at least 24 hours' notice.
-                                Failure to comply may result in a symbolic fee.
-                            </p>
-                        </section><br>
-
-                        <section class="mb-4">
-                            <h3>3. Refund Policy</h3>
-                            <p>
-                                Game Of Barbers values honor and customer satisfaction.
-                                A full refund may be requested if the service is not provided as agreed or does not meet expectations.
-                                The request must be made within a maximum of 7 days after the service is performed.
-                            </p>
-                        </section><br>
-
-                        <section class="mb-4">
-                            <h3>4. Data Protection and Privacy</h3>
-                            <p>
-                                All personal data collected is used exclusively for appointment scheduling, contact, and service improvement purposes.
-                                We are committed to not sharing information with third parties, ensuring data security and confidentiality in accordance with applicable legislation.
-                            </p>
-                        </section><br>
-
-                        <section class="mb-4">
-                            <h3>5. Limitation of Liability</h3>
-                            <p>
-                                Game Of Barbers is not responsible for indirect damages or situations beyond its control.
-                                The barbershop's liability is limited to the amount paid for the contracted service.
-                            </p>
-                        </section><br>
-
-                        <section class="mb-4">
-                            <h3>6. Changes to the Terms</h3>
-                            <p>
-                                We reserve the right to modify this policy whenever necessary.
-                                Any relevant changes will be communicated to users through the provided contact methods.
-                                Continued use of the services after changes will be considered acceptance of the new terms.
-                            </p>
-                        </section><br>
-
-                        <footer class="text-center mt-5">
-                            <p>Game Of Barbers - Where every cut honors the throne 👑✂️</p>
-                        </footer>
-                    </div>
-                    <div class="modal-footer">
-                        <button id="conditionsDenyBtn" type="button" class="btn btn-danger">
-                            <i class="bi bi-x-circle me-2"></i>Decline
-                        </button>
-                        <button id="conditionsAcceptBtn" type="button" class="btn btn-success">
-                            <i class="bi bi-check-circle me-2"></i>Accept
-                        </button>
+                            <footer class="text-center mt-5">
+                                <p>Game Of Barbers - Where every cut honors the throne 👑✂️</p>
+                            </footer>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
                     </div>
                 </div>
             </div>
+
+            <!-- Conditions Modal -->
+            <div class="modal fade" id="conditionsModal" tabindex="-1" aria-labelledby="conditionsModalLabel" data-bs-backdrop="static" data-bs-keyboard="false">
+                <div class="modal-dialog modal-xl" style="max-height: 90vh;">
+                    <div class="modal-content" style="max-height: 90vh; display: flex; flex-direction: column;">
+                        <div class="modal-header">
+                            <h5 class="modal-title text-center w-100" id="conditionsModalLabel">
+                                <i class="bi bi-file-earmark-text-fill me-2 text-primary"></i>Game Of Barbers
+                            </h5>
+                        </div>
+                        <div class="modal-body" style="overflow-y: auto; flex: 1; font-size: 0.95rem;">
+                            <header class="mb-5 text-center">
+                                <h1 class="display-5">Terms and Conditions</h1>
+                                <p class="lead">Game Of Barbers - Professional Barbershop</p>
+                                <p>Welcome to the Terms and Conditions of Game Of Barbers. This document establishes the rights and responsibilities between the barbershop and its clients. By using our services, you agree to these terms.</p>
+                            </header>
+
+                            <section class="mb-4">
+                                <h3>1. Service Use</h3>
+                                <p>
+                                    By accessing and using the services of <strong>Game Of Barbers - Professional Barbershop</strong>, the user agrees to the terms described herein.
+                                    The user commits to providing truthful and up-to-date information and is responsible for maintaining the confidentiality of personal and access data.
+                                </p>
+                            </section><br>
+
+                            <section class="mb-4">
+                                <h3>2. Appointments and Cancellations</h3>
+                                <p>
+                                    Appointments must be made at least 24 hours in advance.
+                                    If cancellation or rescheduling is necessary, the user must also provide at least 24 hours' notice.
+                                    Failure to comply may result in a symbolic fee.
+                                </p>
+                            </section><br>
+
+                            <section class="mb-4">
+                                <h3>3. Refund Policy</h3>
+                                <p>
+                                    Game Of Barbers values honor and customer satisfaction.
+                                    A full refund may be requested if the service is not provided as agreed or does not meet expectations.
+                                    The request must be made within a maximum of 7 days after the service is performed.
+                                </p>
+                            </section><br>
+
+                            <section class="mb-4">
+                                <h3>4. Data Protection and Privacy</h3>
+                                <p>
+                                    All personal data collected is used exclusively for appointment scheduling, contact, and service improvement purposes.
+                                    We are committed to not sharing information with third parties, ensuring data security and confidentiality in accordance with applicable legislation.
+                                </p>
+                            </section><br>
+
+                            <section class="mb-4">
+                                <h3>5. Limitation of Liability</h3>
+                                <p>
+                                    Game Of Barbers is not responsible for indirect damages or situations beyond its control.
+                                    The barbershop's liability is limited to the amount paid for the contracted service.
+                                </p>
+                            </section><br>
+
+                            <section class="mb-4">
+                                <h3>6. Changes to the Terms</h3>
+                                <p>
+                                    We reserve the right to modify this policy whenever necessary.
+                                    Any relevant changes will be communicated to users through the provided contact methods.
+                                    Continued use of the services after changes will be considered acceptance of the new terms.
+                                </p>
+                            </section><br>
+
+                            <footer class="text-center mt-5">
+                                <p>Game Of Barbers - Where every cut honors the throne 👑✂️</p>
+                            </footer>
+                        </div>
+                        <div class="modal-footer">
+                            <button id="conditionsDenyBtn" type="button" class="btn btn-danger">
+                                <i class="bi bi-x-circle me-2"></i>Decline
+                            </button>
+                            <button id="conditionsAcceptBtn" type="button" class="btn btn-success">
+                                <i class="bi bi-check-circle me-2"></i>Accept
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- Product Modal -->
+            <div class="modal fade" id="productModal" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content border-0 shadow-lg" style="background-color: #1c1c1c; color: #f5f5f5; border-radius: 1rem;">
+                        <!-- Modal Header -->
+                        <div class="modal-header border-0 justify-content-center position-relative">
+                            <div class="text-center">
+                                <h5 id="modal-name" class="fw-bold mb-1" style="color: #f0c040; font-size: 1.75rem;"></h5>
+                                <span id="modal-price" class="h5 text-white"></span>
+                            </div>
+                            <button type="button" class="btn-close btn-close-white position-absolute end-0 top-0 m-3" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <!-- Modal Body -->
+                        <div class="modal-body text-center">
+                            <img id="modal-image" src="" class="img-fluid rounded mb-4" style="max-height: 300px; border: 2px solid #f0c040;" alt="">
+                            <p id="modal-description" class="text-light" style="font-style: italic;"></p>
+                        </div>
+                        <!-- Modal Footer -->
+                        <div class="modal-footer border-0 justify-content-center">
+                            <button type="button" class="btn btn-outline-light btn-lg" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-warning btn-lg" id="modal-add-cart" style="font-weight: 600;">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cart -->
+            <div class="cart p-3 shadow-lg" id="cart" style="background-color: #1c1c1c; color: #f5f5f5; border-radius: 1rem; width: 300px;">
+                <h5 class="text-center fw-bold mb-3" style="color: #f0c040; font-size: 1.5rem;">Cart</h5>
+                <ul id="cart-items" class="list-unstyled mb-3" style="max-height: 250px; overflow-y: auto;"></ul>
+                <hr style="border-top: 1px solid #f0c040;">
+                <p class="fw-bold text-end mb-3" style="color: #ffffff;">Total: <span id="cart-total">€0.00</span></p>
+                <button class="btn btn-warning w-100 mb-2 fw-bold" onclick="checkout()" style="font-size: 1rem;">Checkout</button>
+                <button class="btn btn-outline-light w-100 fw-bold" onclick="clearCart()" style="font-size: 1rem;">Cancel</button>
+            </div>
+
+
         </div>
-
-
 
         <!-- JAVASCRIPT FILES -->
         <script src="../../js/jquery.min.js"></script>
@@ -915,6 +894,7 @@
         <script src="../../js/click-scroll.js"></script>
         <script src="../../js/custom.js"></script>
         <script src="../../js/first-login.js"></script>
+        <script src="../../js/shop.js"></script>
 
     </body>
 </html>
